@@ -2,9 +2,6 @@
 
 flixDemo is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
-
----
 
 ## Flix Part 1
 
@@ -21,7 +18,7 @@ flixDemo is an app that allows users to browse movies from the [The Movie Databa
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-<img src="https://i.imgur.com/BKhuvmO.gifv" width=250><br>
+<img src="http://recordit.co/hOkkPBb4Pz" width=250><br>
 
 ### Notes
 I followed the instructions but I could not link movie poster image for each movie.
