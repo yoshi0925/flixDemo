@@ -25,4 +25,4 @@ Here's a walkthrough of implemented user stories:
 GIF created with [Recordit](http://recordit.co).
 
 ### Notes
-I followed the instructions but I could not link movie poster image for each movie.
+I was not able to set movie images before setting the NSAllowsArbitraryLoads key to YES under NSAppTransportSecurity dictionary in .plist file.
