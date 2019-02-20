@@ -26,4 +26,4 @@ flixDemo is an app that allows users to browse movies from the [The Movie Databa
 <img src="YOUR_GIF_URL_HERE" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app
+I followed the instructions but I could not link movie poster image for each movie.
