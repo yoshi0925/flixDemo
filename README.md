@@ -20,7 +20,7 @@ flixDemo is an app that allows users to browse movies from the [The Movie Databa
 ### App Walkthough GIF
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/hOkkPBb4Pz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/aPjj6C9APR' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Recordit](http://recordit.co).
 
