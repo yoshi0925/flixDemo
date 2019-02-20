@@ -10,6 +10,7 @@
 		0C4CAE842FD3978AD7484F75 /* Pods_flixDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23FB1F83F3F65106340C5D6 /* Pods_flixDemo.framework */; };
 		1DAFF185FB34E0EA7F3B59E8 /* Pods_flixDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD51D4F1C117EAE4E15BD /* Pods_flixDemoTests.framework */; };
 		895BCC049D687F700ECFD677 /* Pods_flixDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC67A5F8C50932B506E516D /* Pods_flixDemoUITests.framework */; };
+		A4DEE713221DB3F000302764 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DEE712221DB3F000302764 /* ExternalAccessory.framework */; };
 		A4E5F4C0221D284A00488903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5F4BF221D284A00488903 /* AppDelegate.swift */; };
 		A4E5F4C5221D284A00488903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E5F4C3221D284A00488903 /* Main.storyboard */; };
 		A4E5F4C7221D284D00488903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E5F4C6221D284D00488903 /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 		157FD51D4F1C117EAE4E15BD /* Pods_flixDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CF7872F753F4C84290213D /* Pods-flixDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixDemo.debug.xcconfig"; path = "Target Support Files/Pods-flixDemo/Pods-flixDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		743CF70F8355966ED1944ACB /* Pods-flixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixDemo.release.xcconfig"; path = "Target Support Files/Pods-flixDemo/Pods-flixDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A4DEE712221DB3F000302764 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A4DEE714221DB3F000302764 /* flixDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flixDemo.entitlements; sourceTree = "<group>"; };
 		A4E5F4BC221D284A00488903 /* flixDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E5F4BF221D284A00488903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E5F4C4221D284A00488903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DEE713221DB3F000302764 /* ExternalAccessory.framework in Frameworks */,
 				0C4CAE842FD3978AD7484F75 /* Pods_flixDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +120,7 @@
 		A4E5F4BE221D284A00488903 /* flixDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A4DEE714221DB3F000302764 /* flixDemo.entitlements */,
 				A4E5F4BF221D284A00488903 /* AppDelegate.swift */,
 				A4E5F4C3221D284A00488903 /* Main.storyboard */,
 				A4E5F4C6221D284D00488903 /* Assets.xcassets */,
@@ -155,13 +160,13 @@
 				0E98188D187B7DCD12307793 /* Pods-flixDemoUITests.debug.xcconfig */,
 				D5EB60EF54FA45E44C0DD09E /* Pods-flixDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		D4E9574B1DAF8CFAACC3AB2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4DEE712221DB3F000302764 /* ExternalAccessory.framework */,
 				B23FB1F83F3F65106340C5D6 /* Pods_flixDemo.framework */,
 				157FD51D4F1C117EAE4E15BD /* Pods_flixDemoTests.framework */,
 				ACC67A5F8C50932B506E516D /* Pods_flixDemoUITests.framework */,
@@ -241,6 +246,11 @@
 				TargetAttributes = {
 					A4E5F4BB221D284A00488903 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					A4E5F4CF221D284D00488903 = {
 						CreatedOnToolsVersion = 10.1;
@@ -575,6 +585,7 @@
 			baseConfigurationReference = 34CF7872F753F4C84290213D /* Pods-flixDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flixDemo/flixDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PP39RZJ7X4;
 				INFOPLIST_FILE = flixDemo/Info.plist;
@@ -594,6 +605,7 @@
 			baseConfigurationReference = 743CF70F8355966ED1944ACB /* Pods-flixDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = flixDemo/flixDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PP39RZJ7X4;
 				INFOPLIST_FILE = flixDemo/Info.plist;
