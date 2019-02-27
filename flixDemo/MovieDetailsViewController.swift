@@ -11,7 +11,7 @@ import AlamofireImage
 
 class MovieDetailsViewController: UIViewController {
 
-    @IBOutlet weak var backdrop: UIImageView!
+    @IBOutlet weak var backdropView: UIImageView!
     
     @IBOutlet weak var posterView: UIImageView!
     
@@ -29,13 +29,23 @@ class MovieDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
        // print(movie["title"])
         titleLabel.text = movie["title"] as? String
+        titleLabel.sizeToFit()
+        
         synopsisLabel.text = movie["overview"] as? String
+        synopsisLabel.sizeToFit()
         
         let baseUrl = "http://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)!
+        let posterUrl = URL(string: baseUrl + posterPath)
         
-        posterView.af_setImage(withURL: posterUrl)
+        posterView.af_setImage(withURL: posterUrl!)
+
+        let backdropPath = movie["backdrop_path"] as! String
+        //print(movie["backdrop_path"])
+        let backdropUrl = URL(string: "http://image.tmdb.org/t/p/w780" + backdropPath)
+        
+        backdropView.af_setImage(withURL: backdropUrl!)
+
     }
     
     
