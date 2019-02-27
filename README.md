@@ -17,11 +17,20 @@ flixDemo is an app that allows users to browse movies from the [The Movie Databa
 - [ ] (2pt) User can view the app on various device sizes and orientations.
 - [x] (1pt) Run your app on a real device.
 
+## Flix Part 2
+
+### User Stories
+
+#### REQUIRED (10pts)
+- [x] (5pts) User can tap a cell to see more details about a particular movie.
+- [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+
+#### BONUS
+- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
+
 ### App Walkthough GIF
 Here's a walkthrough of implemented user stories:
-
-<img src='http://g.recordit.co/aPjj6C9APR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
 
 <img src='http://g.recordit.co/FfLPSfkGqU.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [Recordit](http://recordit.co).
